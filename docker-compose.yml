@@ -4,8 +4,12 @@ services:
   web:
     image: paloaltonetworks/minemeld:latest
     ports:
-        - 6060:443
+        - 443:443
+        - 80:80
     volumes:
         - ./local:/opt/minemeld/local
+        - ./logs:/opt/minemeld/log
+        #- ./certs/real-cert.crt:/etc/nginx/minemeld.cer
+        #- ./certs/real-cert.pem:/etc/nginx/minemeld.pem
     deploy:
       replicas: 1

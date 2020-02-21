@@ -7,4 +7,4 @@ Docker deployment with Docker Swarm
     docker swarm init
     docker stack deploy -c docker-compose.yml minemeld
 
-You have minemeld running at https://localhost:6060 (*you may change port in `docker-compose.yml` file*) using official docker image at `https://hub.docker.com/r/paloaltonetworks/minemeld`
+You have minemeld running at https://localhost (*you may change port in `docker-compose.yml` file*) using official docker image at `https://hub.docker.com/r/paloaltonetworks/minemeld`
