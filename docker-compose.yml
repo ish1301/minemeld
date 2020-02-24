@@ -4,8 +4,8 @@ services:
   web:
     image: paloaltonetworks/minemeld:latest
     ports:
-        - 443:443
-        - 80:80
+        - 6060:443
+        #- 80:80
     volumes:
         - ./local:/opt/minemeld/local
         - ./logs:/opt/minemeld/log
